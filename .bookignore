@@ -1,0 +1,6 @@
+src/
+example/
+styles/
+.babelrc
+.npmignore
+package.json

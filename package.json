@@ -1,0 +1,53 @@
+{
+  "name": "react-fiction",
+  "description": "An interactive fiction framework for React.",
+  "version": "1.0.0",
+  "author": "Zach Bruggeman <mail@bruggie.com>",
+  "bugs": {
+    "url": "https://github.com/remixz/react-fiction/issues"
+  },
+  "dependencies": {
+    "invariant": "^2.1.1",
+    "react-redux": "^3.0.0",
+    "redux": "^3.0.2"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-eslint": "^4.1.3",
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.19.0",
+    "gitbook-cli": "^0.3.6",
+    "gitbook-plugin-prism": "^0.1.1",
+    "react": "^0.14.0-rc1",
+    "react-dom": "^0.14.0-rc1",
+    "rimraf": "^2.4.3",
+    "standard": "^5.3.1",
+    "style-loader": "^0.12.4",
+    "surge": "^0.15.0",
+    "webpack": "^1.12.2"
+  },
+  "homepage": "https://github.com/remixz/react-fiction#readme",
+  "keywords": [
+    "interactive fiction",
+    "react"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remixz/react-fiction.git"
+  },
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "build-example": "cd example && webpack",
+    "clean": "rimraf lib",
+    "prepublish": "npm run clean && npm run build",
+    "docs": "gitbook build",
+    "publish-docs": "npm run docs && echo 'react-fiction.bruggie.com' > _book/CNAME && surge _book",
+    "watch-docs": "gitbook serve",
+    "test": "standard src/**/*"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
