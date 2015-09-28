@@ -18,9 +18,9 @@ import { render } from 'react-dom'
 
 import {
   Story, Viewer, Rooms, Room, Passage, Link, RoomTitle, RoomComponent, ContextTypes
-} from '../'
+} from 'react-fiction'
 
-import '../styles/default.css'
+import 'react-fiction/styles/default.css'
 
 class Example extends Component {
   render () {
