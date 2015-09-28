@@ -18,9 +18,9 @@ import { render } from 'react-dom'
 
 import {
   Story, Viewer, Rooms, Room, Passage, Link, RoomTitle, RoomComponent, ContextTypes
-} from 'react-fiction'
+} from '../'
 
-import 'react-fiction/styles/default.css'
+import '../styles/default.css'
 
 class Example extends Component {
   render () {
@@ -80,7 +80,7 @@ class LightRoom extends Component {
     return (
       <div>
         <Passage>
-          The room is now illuminated. You've turned on this light {room.data.visited} times.
+          The room is now illuminated. You have turned on this light {room.data.visited} times.
         </Passage>
 
         <Link to='room-1'> Turn off light </Link>
