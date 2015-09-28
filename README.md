@@ -80,7 +80,7 @@ class LightRoom extends Component {
     return (
       <div>
         <Passage>
-          The room is now illuminated. You've turned on this light {room.data.visited} times.
+          The room is now illuminated. You have turned on this light {room.data.visited} times.
         </Passage>
 
         <Link to='room-1'> Turn off light </Link>
