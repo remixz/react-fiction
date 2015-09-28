@@ -10,7 +10,7 @@ npm install react-fiction --save
 
 ## Example
 
-See the [documentation](http://react-fiction.bruggie.com) for full usage details.
+See the [documentation](/docs/Usage.md) for full usage details.
 
 ```js
 import React, { Component } from 'react'

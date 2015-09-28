@@ -3,5 +3,14 @@
   "structure": {
     "summary": "docs/README.md"
   },
-  "plugins": ["prism"]
+  "plugins": ["prism", "github", "edit-link"],
+  "pluginsConfig": {
+    "github": {
+      "url": "https://github.com/remixz/react-fiction"
+    },
+    "edit-link": {
+      "base": "https://github.com/remixz/react-fiction/tree/master",
+      "label": "Edit on GitHub"
+    }
+  }
 }
